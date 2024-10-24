@@ -1,0 +1,307 @@
+===== GP Implementation with Workloadc (100K) =====
+===== Load ====
+[OVERALL], RunTime(ms), 186573.0
+[OVERALL], Throughput(ops/sec), 535.9832344444266
+[CLEANUP], Operations, 1
+[CLEANUP], AverageLatency(us), 10.0
+[CLEANUP], MinLatency(us), 10
+[CLEANUP], MaxLatency(us), 10
+[CLEANUP], 95thPercentileLatency(ms), 0
+[CLEANUP], 99thPercentileLatency(ms), 0
+
+===== Run ====
+[OVERALL], RunTime(ms), 135009.0
+[OVERALL], Throughput(ops/sec), 740.691361316653
+[READ], Operations, 100000
+[READ], AverageLatency(us), 1346.57107
+[READ], MinLatency(us), 1091
+[READ], MaxLatency(us), 109439
+[READ], 95thPercentileLatency(ms), 1
+[READ], 99thPercentileLatency(ms), 1
+[READ], Return=0, 100000
+
+ Level |   Tables   |    Size(MB)   |    Time(sec)  |    Read(MB)   |   Write(MB)
+-------+------------+---------------+---------------+---------------+---------------
+   0   |          1 |       3.74042 |       0.00000 |       0.00000 |       0.00000
+   1   |         50 |      98.76262 |       0.00000 |       0.00000 |       0.00000
+   2   |          5 |      10.06196 |       0.00000 |       0.00000 |       0.00000
+
+===== GP Implementation with Workloadc (200K) =====
+===== Load ====
+[OVERALL], RunTime(ms), 369519.0
+[OVERALL], Throughput(ops/sec), 541.2441579458701
+[CLEANUP], Operations, 1
+[CLEANUP], AverageLatency(us), 6.0
+[CLEANUP], MinLatency(us), 6
+[CLEANUP], MaxLatency(us), 6
+[CLEANUP], 95thPercentileLatency(ms), 0
+[CLEANUP], 99thPercentileLatency(ms), 0
+
+
+===== Run ====
+[OVERALL], RunTime(ms), 268923.0
+[OVERALL], Throughput(ops/sec), 743.7073065524332
+[READ], Operations, 200000
+[READ], AverageLatency(us), 1341.72708
+[READ], MinLatency(us), 1103
+[READ], MaxLatency(us), 109454
+[READ], 95thPercentileLatency(ms), 1
+[READ], 99thPercentileLatency(ms), 1
+[READ], Return=0, 200000
+
+
+LevelDB Stats:
+Compactions
+ Level |   Tables   |    Size(MB)   |    Time(sec)  |    Read(MB)   |   Write(MB)
+-------+------------+---------------+---------------+---------------+---------------
+   0   |          1 |       3.57346 |       0.00000 |       0.00000 |       0.00000
+   1   |         30 |      59.87894 |       0.00000 |       0.00000 |       0.00000
+   2   |         86 |     162.11013 |       0.00000 |       0.00000 |       0.00000
+
+===== GP Implementation with Workloadc (500K) =====
+===== Load ====
+[OVERALL], RunTime(ms), 927351.0
+[OVERALL], Throughput(ops/sec), 539.1701739686483
+[CLEANUP], Operations, 1
+[CLEANUP], AverageLatency(us), 6.0
+[CLEANUP], MinLatency(us), 6
+[CLEANUP], MaxLatency(us), 6
+[CLEANUP], 95thPercentileLatency(ms), 0
+[CLEANUP], 99thPercentileLatency(ms), 0
+
+
+===== Run ====
+[OVERALL], RunTime(ms), 681914.0
+[OVERALL], Throughput(ops/sec), 733.2302900365735
+[READ], Operations, 500000
+[READ], AverageLatency(us), 1361.268046
+[READ], MinLatency(us), 1100
+[READ], MaxLatency(us), 108241
+[READ], 95thPercentileLatency(ms), 1
+[READ], 99thPercentileLatency(ms), 1
+
+LevelDB Stats:
+Compactions
+ Level |   Tables   |    Size(MB)   |    Time(sec)  |    Read(MB)   |   Write(MB)
+-------+------------+---------------+---------------+---------------+---------------
+   0   |          1 |       3.08797 |       0.00000 |       0.00000 |       0.00000
+   1   |          1 |       0.00473 |       0.00000 |       0.00000 |       0.00000
+   2   |        296 |     561.64003 |       0.00000 |       0.00000 |       0.00000
+   
+   
+
+=========power law (100K)=========
+===== Load ====
+[OVERALL], RunTime(ms), 183509.0
+[OVERALL], Throughput(ops/sec), 544.9324011356391
+[CLEANUP], Operations, 1
+[CLEANUP], AverageLatency(us), 10.0
+[CLEANUP], MinLatency(us), 10
+[CLEANUP], MaxLatency(us), 10
+[CLEANUP], 95thPercentileLatency(ms), 0
+[CLEANUP], 99thPercentileLatency(ms), 0
+
+===== Run ====
+[OVERALL], RunTime(ms), 134102.0
+[OVERALL], Throughput(ops/sec), 745.7010335416325
+[READ], Operations, 100000
+[READ], AverageLatency(us), 1337.6488
+[READ], MinLatency(us), 1099
+[READ], MaxLatency(us), 109904
+[READ], 95thPercentileLatency(ms), 1
+[READ], 99thPercentileLatency(ms), 1
+[READ], Return=0, 100000
+
+ Level |   Tables   |    Size(MB)   |    Time(sec)  |    Read(MB)   |   Write(MB)
+-------+------------+---------------+---------------+---------------+---------------
+   0   |          1 |       3.73610 |       0.00000 |       0.00000 |       0.00000
+   2   |          4 |      24.39471 |       0.00000 |       0.00000 |       0.00000
+   3   |          6 |      68.35631 |       0.00000 |       0.00000 |       0.00000
+   4   |          1 |      16.09295 |       0.00000 |       0.00000 |       0.00000
+   
+   
+=========power law (200K)=========
+===== Load ====
+[OVERALL], RunTime(ms), 364606.0
+[OVERALL], Throughput(ops/sec), 548.5373252222947
+[CLEANUP], Operations, 1
+[CLEANUP], AverageLatency(us), 6.0
+[CLEANUP], MinLatency(us), 6
+[CLEANUP], MaxLatency(us), 6
+[CLEANUP], 95thPercentileLatency(ms), 0
+[CLEANUP], 99thPercentileLatency(ms), 0
+
+===== Run ====
+[OVERALL], RunTime(ms), 264981.0
+[OVERALL], Throughput(ops/sec), 754.7710967956193
+[READ], Operations, 200000
+[READ], AverageLatency(us), 1322.327625
+[READ], MinLatency(us), 1099
+[READ], MaxLatency(us), 109350
+[READ], 95thPercentileLatency(ms), 1
+[READ], 99thPercentileLatency(ms), 1
+[READ], Return=0, 200000
+
+LevelDB Stats:
+Compactions
+ Level |   Tables   |    Size(MB)   |    Time(sec)  |    Read(MB)   |   Write(MB)
+-------+------------+---------------+---------------+---------------+---------------
+   0   |          1 |       3.57134 |       0.00000 |       0.00000 |       0.00000
+   3   |          2 |      31.70576 |       0.00000 |       0.00000 |       0.00000
+   4   |          5 |      76.17270 |       0.00000 |       0.00000 |       0.00000
+   5   |          5 |     114.11872 |       0.00000 |       0.00000 |       0.00000
+
+=========power law (500K)=========
+===== Load ====
+[OVERALL], RunTime(ms), 914207.0
+[OVERALL], Throughput(ops/sec), 546.922086573391
+[CLEANUP], Operations, 1
+[CLEANUP], AverageLatency(us), 5.0
+[CLEANUP], MinLatency(us), 5
+[CLEANUP], MaxLatency(us), 5
+[CLEANUP], 95thPercentileLatency(ms), 0
+[CLEANUP], 99thPercentileLatency(ms), 0
+
+===== Run ====
+[OVERALL], RunTime(ms), 667144.0
+[OVERALL], Throughput(ops/sec), 749.4633842169007
+[READ], Operations, 500000
+[READ], AverageLatency(us), 1332.007022
+[READ], MinLatency(us), 1096
+[READ], MaxLatency(us), 110671
+[READ], 95thPercentileLatency(ms), 1
+[READ], 99thPercentileLatency(ms), 1
+[READ], Return=0, 500000
+
+ Level |   Tables   |    Size(MB)   |    Time(sec)  |    Read(MB)   |   Write(MB)
+-------+------------+---------------+---------------+---------------+---------------
+   0   |          1 |       3.06786 |       0.00000 |       0.00000 |       0.00000
+   6   |          1 |      23.36475 |       0.00000 |       0.00000 |       0.00000
+   7   |          3 |      79.46082 |       0.00000 |       0.00000 |       0.00000
+   8   |          6 |     200.99434 |       0.00000 |       0.00000 |       0.00000
+   9   |          7 |     257.86151 |       0.00000 |       0.00000 |       0.00000
+   
+   
+   
+   
+==============GoNum (100K) ===========
+=====Load=======
+[OVERALL], RunTime(ms), 187848.0
+[OVERALL], Throughput(ops/sec), 532.3453004556876
+[CLEANUP], Operations, 1
+[CLEANUP], AverageLatency(us), 11.0
+[CLEANUP], MinLatency(us), 11
+[CLEANUP], MaxLatency(us), 11
+[CLEANUP], 95thPercentileLatency(ms), 0
+[CLEANUP], 99thPercentileLatency(ms), 0
+
+
+=======Run========
+[OVERALL], RunTime(ms), 137182.0
+[OVERALL], Throughput(ops/sec), 728.9586097301395
+[READ], Operations, 100000
+[READ], AverageLatency(us), 1368.04887
+[READ], MinLatency(us), 1100
+[READ], MaxLatency(us), 109871
+[READ], 95thPercentileLatency(ms), 1
+[READ], 99thPercentileLatency(ms), 1
+[READ], Return=0, 100000
+
+
+ Level |   Tables   |    Size(MB)   |    Time(sec)  |    Read(MB)   |   Write(MB)
+-------+------------+---------------+---------------+---------------+---------------
+   0   |          1 |       3.73498 |       0.00000 |       0.00000 |       0.00000
+   9   |          1 |       0.79918 |       0.00000 |       0.00000 |       0.00000
+  14   |          4 |      10.26550 |       0.00000 |       0.00000 |       0.00000
+  15   |          4 |      16.10015 |       0.00000 |       0.00000 |       0.00000
+  16   |          5 |      21.93484 |       0.00000 |       0.00000 |       0.00000
+  17   |          7 |      25.29268 |       0.00000 |       0.00000 |       0.00000
+  18   |         10 |      28.80192 |       0.00000 |       0.00000 |       0.00000
+  19   |          2 |       5.63499 |       0.00000 |       0.00000 |       0.00000
+  
+  
+  
+  
+==============GoNum (200K) ===========
+=====Load=======
+[OVERALL], RunTime(ms), 376241.0
+[OVERALL], Throughput(ops/sec), 531.5741771896205
+[CLEANUP], Operations, 1
+[CLEANUP], AverageLatency(us), 6.0
+[CLEANUP], MinLatency(us), 6
+[CLEANUP], MaxLatency(us), 6
+[CLEANUP], 95thPercentileLatency(ms), 0
+[CLEANUP], 99thPercentileLatency(ms), 0
+
+
+=======Run========
+[OVERALL], RunTime(ms), 270170.0
+[OVERALL], Throughput(ops/sec), 740.274641892142
+[READ], Operations, 200000
+[READ], AverageLatency(us), 1347.95481
+[READ], MinLatency(us), 1066
+[READ], MaxLatency(us), 109977
+[READ], 95thPercentileLatency(ms), 1
+[READ], 99thPercentileLatency(ms), 1
+[READ], Return=0, 200000
+
+ Level |   Tables   |    Size(MB)   |    Time(sec)  |    Read(MB)   |   Write(MB)
+-------+------------+---------------+---------------+---------------+---------------
+   0   |          1 |       3.57468 |       0.00000 |       0.00000 |       0.00000
+  15   |          1 |       0.40758 |       0.00000 |       0.00000 |       0.00000
+  23   |          1 |       0.60093 |       0.00000 |       0.00000 |       0.00000
+  27   |          1 |       3.54819 |       0.00000 |       0.00000 |       0.00000
+  28   |          1 |       2.81702 |       0.00000 |       0.00000 |       0.00000
+  29   |          4 |      17.50862 |       0.00000 |       0.00000 |       0.00000
+  30   |          6 |      29.57584 |       0.00000 |       0.00000 |       0.00000
+  31   |          7 |      36.84130 |       0.00000 |       0.00000 |       0.00000
+  32   |          5 |      40.23028 |       0.00000 |       0.00000 |       0.00000
+  33   |          5 |      40.23391 |       0.00000 |       0.00000 |       0.00000
+  34   |          6 |      42.25519 |       0.00000 |       0.00000 |       0.00000
+  35   |          1 |       8.04929 |       0.00000 |       0.00000 |       0.00000
+  
+  
+==============GoNum (500K) ===========
+=====Load=======
+[OVERALL], RunTime(ms), 913076.0
+[OVERALL], Throughput(ops/sec), 547.599542644862
+[CLEANUP], Operations, 1
+[CLEANUP], AverageLatency(us), 4.0
+[CLEANUP], MinLatency(us), 4
+[CLEANUP], MaxLatency(us), 4
+[CLEANUP], 95thPercentileLatency(ms), 0
+[CLEANUP], 99thPercentileLatency(ms), 0
+
+
+=======Run========
+[OVERALL], RunTime(ms), 693095.0
+[OVERALL], Throughput(ops/sec), 721.4018280322323
+[READ], Operations, 500000
+[READ], AverageLatency(us), 1383.714932
+[READ], MinLatency(us), 1073
+[READ], MaxLatency(us), 115978
+[READ], 95thPercentileLatency(ms), 1
+[READ], 99thPercentileLatency(ms), 1
+[READ], Return=0, 500000
+
+
+LevelDB Stats:
+Compactions
+ Level |   Tables   |    Size(MB)   |    Time(sec)  |    Read(MB)   |   Write(MB)
+-------+------------+---------------+---------------+---------------+---------------
+   0   |          1 |       3.07650 |       0.00000 |       0.00000 |       0.00000
+  26   |          1 |       0.61076 |       0.00000 |       0.00000 |       0.00000
+  33   |          1 |       3.83353 |       0.00000 |       0.00000 |       0.00000
+  35   |          2 |      12.67450 |       0.00000 |       0.00000 |       0.00000
+  36   |          7 |      35.45247 |       0.00000 |       0.00000 |       0.00000
+  37   |          7 |      44.86841 |       0.00000 |       0.00000 |       0.00000
+  38   |          6 |      40.80918 |       0.00000 |       0.00000 |       0.00000
+  39   |          6 |      45.85410 |       0.00000 |       0.00000 |       0.00000
+  40   |          6 |      47.67467 |       0.00000 |       0.00000 |       0.00000
+  41   |          6 |      41.46043 |       0.00000 |       0.00000 |       0.00000
+  42   |          6 |      46.11502 |       0.00000 |       0.00000 |       0.00000
+  43   |          6 |      49.28495 |       0.00000 |       0.00000 |       0.00000
+  44   |          8 |      53.77375 |       0.00000 |       0.00000 |       0.00000
+  45   |          7 |      56.31117 |       0.00000 |       0.00000 |       0.00000
+  46   |          7 |      56.33251 |       0.00000 |       0.00000 |       0.00000
+  47   |          4 |      26.75788 |       0.00000 |       0.00000 |       0.00000
