@@ -115,7 +115,7 @@ Power Law implementation shows:
 - **Better level distribution** reducing deep level formation
 - **Improved storage efficiency** with more balanced file sizes
 
-## 🧪 Testing Framework
+## Testing Framework
 
 ### Running Benchmarks
 
@@ -178,7 +178,7 @@ The power law distribution creates more balanced level sizes, reducing the forma
 - **Improved compaction patterns**: Less frequent deep-level compactions
 - **Optimized disk usage**: More uniform file size distribution
 
-## 📚 Documentation
+## Documentation
 
 For detailed API documentation, refer to the [original LevelDB documentation](http://godoc.org/github.com/syndtr/goleveldb).
 
@@ -194,6 +194,6 @@ import "github.com/me-hem/PL-LevelDB/leveldb"
 db, err := leveldb.OpenFile("existing_db", nil)
 ```
 
-## 📄 License
+## License
 
 This project maintains the same BSD-style license as the original LevelDB implementation.
